@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daraz Clone</title>
+    <link rel="stylesheet" href="styles.css"> <!-- StyleSheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" /> <!-- FontAwesome -->
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="top-bar">
+            <ul class="top-bar-options">
+                <li><a href="#">Save More on App</a></li>
+                <li><a href="#">Sell On Daraz</a></li>
+                <li><a href="#">Help & Support</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Sign Up</a></li>
+                <li><a href="#">زبان تبدیل کریں</a></li>
+            </ul>
+        </div>
+        <div class="main-header">
+            <div class="logo">
+                <img src="logos/main-logo.png" alt="">
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search for products">
+                <button type="button"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <div class="cart-icon">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+        </div>
+    </header>
+    <div class="main-container">
+        <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="banner-images/banner-1.webp" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="banner-images/banner-2.webp" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="banner-images/banner-3.webp" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="banner-images/banner-4.webp" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="banner-images/banner-5.webp" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="banner-images/banner-6.webp" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="banner-images/banner-7.webp" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div class="flash-sale">
+            <h1>Flash Sale</h1>
+        </div>
+        <div class="sale-section">
+            <div class="sale-now">
+                <h3>On Sale Now</h3>
+                <button>Shop All Product</button>
+            </div>
+            <div class="sale-cards">
+                <div class="s-card">
+                    <div class="s-img">
+                        <img src="product-images/sale-1.webp" alt="">
+                    </div>
+                    <div class="s-card-content">
+                        <p>Mastela Baby Portable Auto Swing (Green) 6503</p>
+                        <h3>Rs.14,845</h3>
+                        <p><del>Rs.16,700</del>-11%</p>
+                    </div>
+                </div>
+                <div class="s-card">
+                    <div class="s-img">
+                        <img src="product-images/sale-2.webp" alt="">
+                    </div>
+                    <div class="s-card-content">
+                        <p>AL khair Miswak Toothpaste | 70gm | Fluoride free</p>
+                        <h3>Rs.200</h3>
+                        <p><del>Rs.230</del>-13%</p>
+                    </div>
+                </div>
+                <div class="s-card">
+                    <div class="s-img">
+                        <img src="product-images/sale-3.webp" alt="">
+                    </div>
+                    <div class="s-card-content">
+                        <p>Green Artificial Bonsai Decorative Flowers Plants</p>
+                        <h3>Rs.296</h3>
+                        <p><del>Rs.1,599</del>-81%</p>
+                    </div>
+                </div>
+                <div class="s-card">
+                    <div class="s-img">
+                        <img src="product-images/sale-4.webp" alt="">
+                    </div>
+                    <div class="s-card-content">
+                        <p>100 GPD Membrane (Made in Taiwan) Reverse Osmosis</p>
+                        <h3>Rs.2,620</h3>
+                        <p><del>Rs.3,025</del>-13%</p>
+                    </div>
+                </div>
+                <div class="s-card">
+                    <div class="s-img">
+                        <img src="product-images/sale-5.webp" alt="">
+                    </div>
+                    <div class="s-card-content">
+                        <p>Mastela 3in1 Baby Delux Multifunctional Bassinet</p>
+                        <h3>Rs.16,895</h3>
+                        <p><del>Rs.21,700</del>-22%</p>
+                    </div>
+                </div>
+                <div class="s-card">
+                    <div class="s-img">
+                        <img src="product-images/sale-6.webp" alt="">
+                    </div>
+                    <div class="s-card-content">
+                        <p>7 in 1 makeup Highlighter Palette</p>
+                        <h3>Rs.271</h3>
+                        <p><del>Rs.600</del>-55%</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="category-heading">
+            <h1>All Category</h1>
+        </div>
+        <div class="all-category">
+            <div class="category">
+                <img src="category-images/Mobile.png" alt="">
+                <h1>Mobiles</h1>
+            </div>
+            <div class="category">
+                <img src="category-images/car.png" alt="">
+                <h1>Vehicles</h1>
+            </div>
+            <div class="category">
+                <img src="category-images/property.png" alt="">
+                <h1>Property</h1>
+            </div>
+            <div class="category">
+                <img src="category-images/key.png" alt="">
+                <h1>Rent</h1>
+            </div>
+            <div class="category">
+                <img src="category-images/Camera.png" alt="">
+                <h1>Electronic</h1>
+            </div>
+            <div class="category">
+                <img src="category-images/bike.png" alt="">
+                <h1>Bikes</h1>
+            </div>
+            <div class="category">
+                <img src="category-images/trackter.png" alt="">
+                <h1>Agriculture</h1>
+            </div>
+            <div class="category">
+                <img src="category-images/color.png" alt="">
+                <h1>Services</h1>
+            </div>
+            <div class="category">
+                <img src="category-images/job.png" alt="">
+                <h1>Jobs</h1>
+            </div>
+            <div class="category">
+                <img src="category-images/animal.png" alt="">
+                <h1>Animals</h1>
+            </div>
+            <div class="category">
+                <img src="category-images/furniture.png" alt="">
+                <h1>Furniture</h1>
+            </div>
+            <div class="category">
+                <img src="category-images/dress.png" alt="">
+                <h1>Fashion</h1>
+            </div>
+            <div class="category">
+                <img src="category-images/books.png" alt="">
+                <h1>Books</h1>
+            </div>
+            <div class="category">
+                <img src="category-images/toy.png" alt="">
+                <h1>Kids</h1>
+            </div>
+        </div>
+        <div class="justforyou-heading">
+            <h1>Just For You</h1>
+        </div>
+        <div class="sale-cards">
+            <div class="s-card">
+                <div class="s-img">
+                    <img src="product-images/pruduct-1.webp" alt="">
+                </div>
+                <div class="s-card-content">
+                    <p>Air 31 Air pro bluetooth handfree i7s TWS Airpods</p>
+                    <h3>Rs.770 <span style="font-size: 13px; color: black;">-62%</span></h3>
+                    <p style="font-size: 13px;"><i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star"></i>(826)
+                    </p>
+                </div>
+            </div>
+            <div class="s-card">
+                <div class="s-img">
+                    <img src="product-images/pruduct-2.webp" alt="">
+                </div>
+                <div class="s-card-content">
+                    <p>Mobile Selfie Ring Light – Portable Mini Selfie LED Lamp Ring</p>
+                    <h3>Rs.399 <span style="font-size: 13px; color: black;">-43%</span></h3>
+                    <p style="font-size: 13px;"><i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star"></i>(201)
+                    </p>
+                </div>
+            </div>
+            <div class="s-card">
+                <div class="s-img">
+                    <img src="product-images/pruduct-3.webp" alt="">
+                </div>
+                <div class="s-card-content">
+                    <p>4pc/set Korean Style Jewelry Headwear Luxury Party Wedding</p>
+                    <h3>Rs.299 <span style="font-size: 13px; color: black;">-57%</span></h3>
+                    <p style="font-size: 13px;"><i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>(428)
+                    </p>
+                </div>
+            </div>
+            <div class="s-card">
+                <div class="s-img">
+                    <img src="product-images/pruduct-4.webp" alt="">
+                </div>
+                <div class="s-card-content">
+                    <p>French Vintage Rose For Apple AirPods 1 2 pro Bluetooth</p>
+                    <h3>Rs.1,112 <span style="font-size: 13px; color: black;">-67%</span></h3>
+                </div>
+            </div>
+            <div class="s-card">
+                <div class="s-img">
+                    <img src="product-images/pruduct-5.webp" alt="" style="height: 200px;">
+                </div>
+                <div class="s-card-content">
+                    <p>7 in 1 Smart Watch - 7 Straps Smart watch Ultra watch 8 for Gift</p>
+                    <h3>Rs.946 <span style="font-size: 13px; color: black;">-62%</span></h3>
+                </div>
+            </div>
+            <div class="s-card">
+                <div class="s-img">
+                    <img src="product-images/pruduct-6.webp" alt="">
+                </div>
+                <div class="s-card-content">
+                    <p>Trolley Rack Kitchen Floor Bedroom Multi-Layer Baby Snacks Mobile</p>
+                    <h3>Rs.998 <span style="font-size: 13px; color: black;">-77%</span></h3>
+                </div>
+            </div>
+            <div class="s-card">
+                <div class="s-img">
+                    <img src="product-images/pruduct-1.webp" alt="">
+                </div>
+                <div class="s-card-content">
+                    <p>Air 31 Air pro bluetooth handfree i7s TWS Airpods</p>
+                    <h3>Rs.770 <span style="font-size: 13px; color: black;">-62%</span></h3>
+                    <p style="font-size: 13px;"><i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star"></i>(826)
+                    </p>
+                </div>
+            </div>
+            <div class="s-card">
+                <div class="s-img">
+                    <img src="product-images/pruduct-2.webp" alt="">
+                </div>
+                <div class="s-card-content">
+                    <p>Mobile Selfie Ring Light – Portable Mini Selfie LED Lamp Ring</p>
+                    <h3>Rs.399 <span style="font-size: 13px; color: black;">-43%</span></h3>
+                    <p style="font-size: 13px;"><i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star"></i>(201)
+                    </p>
+                </div>
+            </div>
+            <div class="s-card">
+                <div class="s-img">
+                    <img src="product-images/pruduct-3.webp" alt="">
+                </div>
+                <div class="s-card-content">
+                    <p>4pc/set Korean Style Jewelry Headwear Luxury Party Wedding</p>
+                    <h3>Rs.299 <span style="font-size: 13px; color: black;">-57%</span></h3>
+                    <p style="font-size: 13px;"><i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>(428)
+                    </p>
+                </div>
+            </div>
+            <div class="s-card">
+                <div class="s-img">
+                    <img src="product-images/pruduct-4.webp" alt="">
+                </div>
+                <div class="s-card-content">
+                    <p>French Vintage Rose For Apple AirPods 1 2 pro Bluetooth</p>
+                    <h3>Rs.1,112 <span style="font-size: 13px; color: black;">-67%</span></h3>
+                </div>
+            </div>
+            <div class="s-card">
+                <div class="s-img">
+                    <img src="product-images/pruduct-5.webp" alt="" style="height: 200px;">
+                </div>
+                <div class="s-card-content">
+                    <p>chia seeds - 1kg -1000g - organic Chia seeds- chia seeds</p>
+                    <h3>Rs.1,499 <span style="font-size: 13px; color: black;">-29%</span></h3>
+                    <p style="font-size: 13px;"><i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>(194)
+                    </p>
+                </div>
+            </div>
+            <div class="s-card">
+                <div class="s-img">
+                    <img src="product-images/pruduct-6.webp" alt="">
+                </div>
+                <div class="s-card-content">
+                    <p>1pc Three-dimensional Flower Earphone Cases for Apple AirPods</p>
+                    <h3>Rs.998 <span style="font-size: 13px; color: black;">-77%</span></h3>
+                </div>
+            </div>
+            <div class="s-card">
+                <div class="s-img">
+                    <img src="product-images/pruduct-1.webp" alt="">
+                </div>
+                <div class="s-card-content">
+                    <p>Air 31 Air pro bluetooth handfree i7s TWS Airpods</p>
+                    <h3>Rs.770 <span style="font-size: 13px; color: black;">-62%</span></h3>
+                    <p style="font-size: 13px;"><i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star"></i>(826)
+                    </p>
+                </div>
+            </div>
+            <div class="s-card">
+                <div class="s-img">
+                    <img src="product-images/pruduct-2.webp" alt="">
+                </div>
+                <div class="s-card-content">
+                    <p>Mobile Selfie Ring Light – Portable Mini Selfie LED Lamp Ring</p>
+                    <h3>Rs.399 <span style="font-size: 13px; color: black;">-43%</span></h3>
+                    <p style="font-size: 13px;"><i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star"></i>(201)
+                    </p>
+                </div>
+            </div>
+            <div class="s-card">
+                <div class="s-img">
+                    <img src="product-images/pruduct-3.webp" alt="">
+                </div>
+                <div class="s-card-content">
+                    <p>4pc/set Korean Style Jewelry Headwear Luxury Party Wedding</p>
+                    <h3>Rs.299 <span style="font-size: 13px; color: black;">-57%</span></h3>
+                    <p style="font-size: 13px;"><i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>(428)
+                    </p>
+                </div>
+            </div>
+            <div class="s-card">
+                <div class="s-img">
+                    <img src="product-images/pruduct-4.webp" alt="">
+                </div>
+                <div class="s-card-content">
+                    <p>French Vintage Rose For Apple AirPods 1 2 pro Bluetooth</p>
+                    <h3>Rs.1,112 <span style="font-size: 13px; color: black;">-67%</span></h3>
+                </div>
+            </div>
+            <div class="s-card">
+                <div class="s-img">
+                    <img src="product-images/pruduct-5.webp" alt="" style="height: 200px;">
+                </div>
+                <div class="s-card-content">
+                    <p>chia seeds - 1kg -1000g - organic Chia seeds- chia seeds</p>
+                    <h3>Rs.1,499 <span style="font-size: 13px; color: black;">-29%</span></h3>
+                    <p style="font-size: 13px;"><i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>(194)
+                    </p>
+                </div>
+            </div>
+            <div class="s-card">
+                <div class="s-img">
+                    <img src="product-images/pruduct-6.webp" alt="">
+                </div>
+                <div class="s-card-content">
+                    <p>1pc Three-dimensional Flower Earphone Cases for Apple AirPods</p>
+                    <h3>Rs.998 <span style="font-size: 13px; color: black;">-77%</span></h3>
+                </div>
+            </div>
+            <div class="s-card">
+                <div class="s-img">
+                    <img src="product-images/pruduct-1.webp" alt="">
+                </div>
+                <div class="s-card-content">
+                    <p>Air 31 Air pro bluetooth handfree i7s TWS Airpods</p>
+                    <h3>Rs.770 <span style="font-size: 13px; color: black;">-62%</span></h3>
+                    <p style="font-size: 13px;"><i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star"></i>(826)
+                    </p>
+                </div>
+            </div>
+            <div class="s-card">
+                <div class="s-img">
+                    <img src="product-images/pruduct-2.webp" alt="">
+                </div>
+                <div class="s-card-content">
+                    <p>Mobile Selfie Ring Light – Portable Mini Selfie LED Lamp Ring</p>
+                    <h3>Rs.399 <span style="font-size: 13px; color: black;">-43%</span></h3>
+                    <p style="font-size: 13px;"><i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star"></i>(201)
+                    </p>
+                </div>
+            </div>
+            <div class="s-card">
+                <div class="s-img">
+                    <img src="product-images/pruduct-3.webp" alt="">
+                </div>
+                <div class="s-card-content">
+                    <p>4pc/set Korean Style Jewelry Headwear Luxury Party Wedding</p>
+                    <h3>Rs.299 <span style="font-size: 13px; color: black;">-57%</span></h3>
+                    <p style="font-size: 13px;"><i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>(428)
+                    </p>
+                </div>
+            </div>
+            <div class="s-card">
+                <div class="s-img">
+                    <img src="product-images/pruduct-4.webp" alt="">
+                </div>
+                <div class="s-card-content">
+                    <p>French Vintage Rose For Apple AirPods 1 2 pro Bluetooth</p>
+                    <h3>Rs.1,112 <span style="font-size: 13px; color: black;">-67%</span></h3>
+                </div>
+            </div>
+            <div class="s-card">
+                <div class="s-img">
+                    <img src="product-images/pruduct-5.webp" alt="" style="height: 200px;">
+                </div>
+                <div class="s-card-content">
+                    <p>chia seeds - 1kg -1000g - organic Chia seeds- chia seeds</p>
+                    <h3>Rs.1,499 <span style="font-size: 13px; color: black;">-29%</span></h3>
+                    <p style="font-size: 13px;"><i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>(194)
+                    </p>
+                </div>
+            </div>
+            <div class="s-card">
+                <div class="s-img">
+                    <img src="product-images/pruduct-6.webp" alt="">
+                </div>
+                <div class="s-card-content">
+                    <p>1pc Three-dimensional Flower Earphone Cases for Apple AirPods</p>
+                    <h3>Rs.998 <span style="font-size: 13px; color: black;">-77%</span></h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="loadmore-button">
+        <button>Load More</button>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section customer-care">
+                <h3>Customer Care</h3>
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">How to Buy</a></li>
+                    <li><a href="#">Corporate & Bulk Purchasing</a></li>
+                    <li><a href="#">Returns & Refunds</a></li>
+                    <li><a href="#">Daraz Shop</a></li>
+                    <li><a href="#">Purchase Protection</a></li>
+                    <li><a href="#">Daraz Pick up Points</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section daraz-info">
+                <h3>Daraz</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Digital Payments</a></li>
+                    <li><a href="#">Daraz Donates</a></li>
+                    <li><a href="#">Daraz Blog</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">NTN Number : 4012118-6</a></li>
+                    <li><a href="#">STRN Number : 1700401211818</a></li>
+                    <li><a href="#">DOnline Shopping App</a></li>
+                    <li><a href="#">Online Grocery Shopping</a></li>
+                    <li><a href="#">Daraz Exclusive</a></li>
+                    <li><a href="#">Daraz University</a></li>
+                    <li><a href="#">Sell on Daraz</a></li>
+                    <li><a href="#">Join Daraz Affiliate Program</a></li>
+                </ul>
+            </div>
+            <div class="footer-section daraz-logo">
+                <div class="daraz">
+                    <div class="daraz-img">
+                        <img src="logos/secondary-logo.png" alt="Daraz Logo">
+                    </div>
+                    <div class="daraz-heading">
+                        <p><span>Happy Shopping</span></p>
+                        <p>Download App</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-section app-download">
+                <h3>Download Our App</h3>
+                <div class="app-images">
+                    <img src="logos/download.png" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+    </div>
+</body>
+
+</html>
